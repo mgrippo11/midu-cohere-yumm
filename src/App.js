@@ -1,15 +1,18 @@
-import logo from './ruleta.png';
+import logo from './logo.png';
 import './App.css';
+import GetMealIdea from './hooks/GetMealIdea'
 
 function App() {
+
+
   return (
     <div className="App">
       <header className="App-header">
-        <h1>YUMM!</h1>
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
+        <img src={logo} className="App-logo" alt='logo'/>
+        <h5>What are we going to eat today?</h5>
+        
+        <GetMealIdea />
+
       </header>
     </div>
   );
