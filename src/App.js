@@ -1,4 +1,4 @@
-import logo from './logo.png';
+import logo from './img/logo.png';
 import './App.css';
 import GetMealIdea from './hooks/GetMealIdea'
 
@@ -9,10 +9,9 @@ function App() {
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt='logo'/>
-        <h5>What are we going to eat today?</h5>
+        <h3 className='subtitle'>YUMM! What are we going to eat today?</h3>
         
         <GetMealIdea />
-
       </header>
     </div>
   );
