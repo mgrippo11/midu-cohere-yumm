@@ -6,6 +6,11 @@ Pagina web creada para el Hackaton "midudev-cohere-2023" con la API de Inteligen
 
 Podras obtener 3 ideas de comidadas para cocinar y la receta de cada plato.
 
+https://midudev-cohere-yumm.vercel.app/
+
+
+
+
 ## Available Scripts
 In the project directory, you can run:
 
