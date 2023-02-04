@@ -1,5 +1,5 @@
-## Hackathon Enero 2023 - Cohere - Inteligencia Artificial
-# midudev-cohere-2023
+# Hackathon Enero 2023 - Cohere - Inteligencia Artificial
+## midudev-cohere-2023
 
 Pagina web creada para el Hackaton "midudev-cohere-2023" con la API de Inteligencia Artificial de CoHere.
 
