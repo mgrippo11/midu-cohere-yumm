@@ -1,5 +1,5 @@
 import logo from './img/logo.png';
-import './App.css';
+import './styles/App.css';
 import GetMealIdea from './hooks/GetMealIdea'
 
 function App() {
