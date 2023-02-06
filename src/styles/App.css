@@ -79,6 +79,7 @@ select {
   grid-column: 3;
   height: 35vmin;
   margin-top: 125px;
+  margin-left: -50px;
 }
 
 .spin h3 {
@@ -149,7 +150,7 @@ select {
   grid-column: 1 / 3;
   grid-row: 2;
   margin: 25px auto;
-  width: 800px;
+  width: 1250px;
   background-color: aliceblue;
   border-radius: 25px;
   filter: drop-shadow(1px 1px 5px black)
@@ -158,6 +159,10 @@ select {
 .divRecipe {
   margin: auto 15px;
   color: #000;
+}
+
+.divRecipe p {
+  font-size: large;
 }
 
 @media (prefers-reduced-motion: no-preference) {
