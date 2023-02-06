@@ -14,9 +14,14 @@
 }
 
 .App-logo {
+  margin-top: 25px;
   height: 20vmin;
   -webkit-filter: drop-shadow(1px 1px 0 white) drop-shadow(-1px -1px 0 white);
   filter: drop-shadow(1px 1px 1px white) drop-shadow(-1px -1px 1px white);
+}
+
+.subtitle {
+  margin: 0;
 }
 
 .selector {
@@ -51,8 +56,8 @@
   display: inline-flex;
 }
 
-.opction h5 select {
-  margin: 15px 0 0 0;
+.opction h5 {
+  color: #87ed4b;
 }
 
 select {
@@ -80,6 +85,7 @@ select {
   grid-column: 1 / 4;
   grid-row: 2;
   margin: 0 280px 0 0;
+  color: #edd300;
 }
 
 .getMeal {
@@ -135,10 +141,6 @@ select {
   font-weight: bold;
 }
 
-.subtitle {
-  margin: 0;
-}
-
 .mealIdea {
   margin: 2px;
 }
@@ -148,7 +150,6 @@ select {
   grid-row: 2;
   margin: 25px auto;
   width: 800px;
-  height: 90%;
   background-color: aliceblue;
   border-radius: 25px;
   filter: drop-shadow(1px 1px 5px black)

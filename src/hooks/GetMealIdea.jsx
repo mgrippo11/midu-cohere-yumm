@@ -22,9 +22,6 @@ const GetMealIdea = () => {
   const [recipeView, setRecipeView] = useState(false)
 
     async function getMealCoHere(input){
-      console.log(input.meal)
-      console.log(input.tmeal)
-
       setRecipeView(false)
       setMealView(true)
       setLoading(true)
@@ -70,7 +67,7 @@ const GetMealIdea = () => {
         },
         body: JSON.stringify({
           model: 'command-xlarge-20221108',
-          prompt: `Recipe of${input}`,
+          prompt: `Recipe of${input} separate into ingredients and instructions`,
           max_tokens: 500,
           temperature: 0.9,
           k: 0,
@@ -82,6 +79,8 @@ const GetMealIdea = () => {
         })
       })
       const dataRecipe = await responseR.json()
+      
+      console.log(dataRecipe.text)
       setLoadingR(false)
       setGetRecipe(dataRecipe.text)
     }
@@ -90,7 +89,6 @@ const GetMealIdea = () => {
     const onSubmit = form => {
       getMealCoHere(form)
     };
-
     
     return (
       <div className='getMeal'>
@@ -108,7 +106,7 @@ const GetMealIdea = () => {
                 </select>
               </div>
               <div className='opction'>
-                <h5>Type of meals</h5>
+                <h5>Type</h5>
                 <select {...register("tmeal")}>
                   {
                     typesMealsArray.map(tmeal => (
@@ -124,14 +122,14 @@ const GetMealIdea = () => {
           <img src={flecha} className='App-flecha' alt='flecha'/>
           <h3>Click roulette to spin!</h3>
         </div>
-          {
-            mealView ?
-              loading ? 
-                <div className="loading A">Loading&#8230;</div>
-              : 
+               
                 <div className='mealIdeas'>
+                
                   <h3>Some Ideas</h3>
                   {
+                  loading ? 
+                    <div className="loading A">Loading&#8230;</div>
+                  :
                     getMeal.map(data => (
                       data ?
                       (Number(data.split('.')[0]) < 4) ?
@@ -144,11 +142,8 @@ const GetMealIdea = () => {
                       :
                         null
                     ))
-                  }
+                }
                 </div>
-            :
-            null
-          }
 
           {
             recipeView ?
